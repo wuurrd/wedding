@@ -288,6 +288,18 @@
       text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.33);
       -webkit-font-smoothing: antialiased;
     }
+    .centered_div {
+       height: 500px;
+       width: 100%;
+       position: absolute;
+       top: 50%;
+       margin-top: 220px;
+    }
+    .gold {
+       border-width: 10px;
+       border-style: double;
+       border-color: gold;
+    }
     </style>
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -308,7 +320,15 @@
     ================================================== -->
     <div id="myCarousel" class="carousel slide">
       <div class="carousel-inner">
-        <div class="item active">
+        <div class="item active gold">
+          <div class="container">
+          <div class="centered_div">
+          <h1 style="margin: 0px 0px;font-size: 60px; text-align:center">Rachel & Umar's Wedding</h1>
+          <p style="font-size: 50px; text-align:center">23.03.2013</p>
+          </div>
+        </div>
+        </div>
+        <div class="item">
           <div style="background: url(wedding6.jpg) no-repeat; background-position: center; height: 500px; min-width:100%">
           <div class="container">
             <div class="carousel-caption">
@@ -346,37 +366,40 @@
       <hr class="featurette-divider">
 
       <div id="gifts" class="featurette">
-        <img class="featurette-image pull-left" src="http://twitter.github.com/bootstrap/assets/img/examples/browser-icon-firefox.png">
+        <img class="featurette-image pull-left" src="wedding.jpg">
         <h2 class="featurette-heading">Gifts</h2>
         <p class="lead">If you wish to give us a wedding gift, we would really appreciate money towards our new lives together. We would also appreciate gift cards to lampemagasinet or ikea, or household items -linked below. If you wish to give us money, please deposit to account nr: 16450542818
-
+<br />
 <a href="https://www.kitchn.no/bryllup/vis-liste/?wishListId=39917">Wedding list at Kitch'n for household items</a>
-- Camera</p>
+<br />
+- Camera
+</p>
       </div>
 
       <hr class="featurette-divider">
 
       <div id="hotels" class="featurette">
-        <img class="featurette-image pull-right" src="http://twitter.github.com/bootstrap/assets/img/examples/browser-icon-chrome.png" />
+        <img class="featurette-image pull-right" src="wedding9.jpg" />
         <h2 class="featurette-heading">Hotels</h2>
         <p class="lead">We have reserved a number of rooms at both the Grand Hotel and Best Western Karl Johan Hotel.
-<br />
-<br />
+<div class="lead">
+<div class="span6">
+<u>Best Western Karl Johan Hotel</u>:
+
+<ul>
+<li class="lead">Kr: 1095,- per night for a double room. <br/>Please use booking code: 1086797.</li>
+<li class="lead">See <a href="www.karljohan.no">Best Western Karl Johan Hotel</a></li>
+</ul>
+</div>
+<div class="span6">
 <u>Grand Hotel</u>
 <ul>
 <li class="lead">Kr: 1695,- per night for a double room. </li>
 <li class="lead">Please contact Erik on (0047) 90138553 if you wish to book at this price or see <a href="www.grand.no">Grand Hotel</a></li>
 </ul>
-</p>
-<p class="lead">
-<u>Best Western Karl Johan Hotel</u>:
+</div>
 
-<ul>
-<li class="lead">Kr: 1095,- per night for a double room. Please use booking code: 1086797.</li>
-<li class="lead">It is located 50 m from the Grand Hotel.</li>
-<li class="lead">See <a href="www.karljohan.no">Best Western Karl Johan Hotel</a></li>
-</ul>
-</p>
+</div>
       </div>
 
       <hr class="featurette-divider">
@@ -386,7 +409,7 @@
 <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.no/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Grand+Hotel,+Karl+Johans+gate+31,+Oslo&amp;aq=0&amp;oq=grand+hote&amp;sll=59.914717,10.736217&amp;sspn=0.001336,0.004823&amp;t=h&amp;g=Karl+Johans+gate+51,+Oslo&amp;ie=UTF8&amp;hq=Grand+Hotel,+Karl+Johans+gate+31,+Oslo&amp;ll=59.913834,10.739049&amp;spn=0.011187,0.032015&amp;output=embed"></iframe><br /><small><a style="font-size:30px" href="https://maps.google.no/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Grand+Hotel,+Karl+Johans+gate+31,+Oslo&amp;aq=0&amp;oq=grand+hote&amp;sll=59.914717,10.736217&amp;sspn=0.001336,0.004823&amp;t=h&amp;g=Karl+Johans+gate+51,+Oslo&amp;ie=UTF8&amp;hq=Grand+Hotel,+Karl+Johans+gate+31,+Oslo&amp;ll=59.913834,10.739049&amp;spn=0.011187,0.032015" style="color:#0000FF;text-align:left">View Larger Map</a></small></iframe>
         </div>
         <h2 class="featurette-heading">Location</h2>
-        <p class="lead">The Wedding Ceremony and Reception will take place at the Grand Hotel in Speilsalen and Rococco Salen - Karl Johans gate 31 
+        <p class="lead">The Wedding Ceremony and Reception will take place at the Grand Hotel in Speilsalen and Rococco Salen - Karl Johans gate 31
         </p>
 
       </div>
@@ -419,7 +442,7 @@
       !function ($) {
         $(function(){
           // carousel demo
-          $('#myCarousel').carousel({"interval": 10000})
+          $('#myCarousel').carousel()
         })
       }(window.jQuery)
     </script>
